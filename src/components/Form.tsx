@@ -1,3 +1,5 @@
+import arrow from "../assets/icon-arrow.svg";
+
 const Form = () => {
   return (
     <form className="form">
@@ -17,6 +19,12 @@ const Form = () => {
           <input id="year" type="number" placeholder="YYYY" required />
           <p>ERR</p>
         </div>
+      </section>
+      <section className="buttonContainer">
+        <hr />
+        <button>
+          <img src={arrow} alt="arrow" />
+        </button>
       </section>
     </form>
   );
