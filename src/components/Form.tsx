@@ -1,4 +1,5 @@
 import arrow from "../assets/icon-arrow.svg";
+import "../sass/Form.scss";
 
 const Form = () => {
   return (
@@ -7,17 +8,17 @@ const Form = () => {
         <div className="formGroup">
           <label htmlFor="day">DAY</label>
           <input id="day" type="number" placeholder="DD" required />
-          <p>ERR</p>
+          <span>ERR</span>
         </div>
         <div className="formGroup">
           <label htmlFor="month">MONTH</label>
           <input id="month" type="number" placeholder="MM" required />
-          <p>ERR</p>
+          <span>ERR</span>
         </div>
         <div className="formGroup">
           <label htmlFor="year">YEAR</label>
           <input id="year" type="number" placeholder="YYYY" required />
-          <p>ERR</p>
+          <span>ERR</span>
         </div>
       </section>
       <section className="buttonContainer">
