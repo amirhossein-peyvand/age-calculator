@@ -1,6 +1,7 @@
 /* input::-webkit-inner-spin-button {
   appearance: none;
 } */
+@import "./sass/colors.scss";
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
 
@@ -20,6 +21,7 @@ body {
   display: flex;
   justify-content: center;
   min-height: 100vh;
+  background-color: hsl(0, 0%, 94%);
 }
 
 #root {

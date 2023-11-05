@@ -1,0 +1,10 @@
+@import "./colors.scss";
+
+.calculator {
+  background-color: $white;
+  margin: 0 auto;
+  min-width: 20rem;
+  width: 95%;
+  padding: 1.5rem;
+  border-radius: 25px 25px 110px 25px;
+}
