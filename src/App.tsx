@@ -3,11 +3,21 @@ import "./sass/App.scss";
 
 function App() {
   return (
-    <article className="calculator">
+    <article className="main">
       <section className="top">
         <Form />
       </section>
-      <section className="bottom"></section>
+      <section className="bottom">
+        <p className="years">
+          <span>--</span> years
+        </p>
+        <p className="months">
+          <span>--</span> months
+        </p>
+        <p className="days">
+          <span>--</span> days
+        </p>
+      </section>
     </article>
   );
 }

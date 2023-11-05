@@ -3,7 +3,7 @@
 .form {
   display: flex;
   flex-direction: column;
-  row-gap: 3rem;
+  row-gap: 5rem;
 
   .formGroupsContainer {
     display: flex;
@@ -50,8 +50,9 @@
 
       span {
         color: $light-red;
-        display: none;
-        font-size: 0.8rem;
+        // display: none;
+        font-size: 0.7rem;
+        font-style: italic;
         letter-spacing: 0.8px;
       }
     }
@@ -89,6 +90,22 @@
 
     button:hover {
       background-color: $off-black;
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .form {
+    .formGroupsContainer {
+      display: flex;
+      column-gap: 1rem;
+
+      .formGroup {
+        span {
+          // display: none;
+          font-size: 0.9rem;
+        }
+      }
     }
   }
 }
