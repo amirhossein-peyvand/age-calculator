@@ -112,6 +112,11 @@
   .form {
     .formGroupsContainer {
       width: 80%;
+      .formGroup {
+        input {
+          width: 12.5rem;
+        }
+      }
     }
 
     .buttonContainer {
