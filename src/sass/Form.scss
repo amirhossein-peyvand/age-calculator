@@ -6,8 +6,8 @@
   row-gap: 5rem;
 
   .formGroupsContainer {
-    display: flex;
     column-gap: 1rem;
+    display: flex;
 
     .formGroup {
       display: flex;
@@ -50,7 +50,6 @@
 
       span {
         color: $light-red;
-        // display: none;
         font-size: 0.7rem;
         font-style: italic;
         letter-spacing: 0.8px;
@@ -97,14 +96,31 @@
 @media screen and (min-width: 500px) {
   .form {
     .formGroupsContainer {
-      display: flex;
       column-gap: 1rem;
+      display: flex;
 
       .formGroup {
         span {
-          // display: none;
           font-size: 0.9rem;
         }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .form {
+    .formGroupsContainer {
+      width: 80%;
+    }
+
+    .buttonContainer {
+      width: 90%;
+
+      button {
+        height: 5.5rem;
+        left: 100%;
+        width: 5.5rem;
       }
     }
   }
