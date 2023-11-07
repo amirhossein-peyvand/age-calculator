@@ -32,6 +32,10 @@
         width: 100%;
       }
 
+      .errorInput {
+        border-color: $light-red !important;
+      }
+
       input::placeholder {
         color: $smokey-grey;
         font-size: 1.5rem;

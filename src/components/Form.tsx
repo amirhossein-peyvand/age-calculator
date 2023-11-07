@@ -86,9 +86,10 @@ const Form = () => {
           <label htmlFor="day">DAY</label>
           <input
             {...register("day", { valueAsNumber: true })}
-            id="day"
             // max={31}
             // min={1}
+            className={errors.day && "errorInput"}
+            id="day"
             placeholder="DD"
             required
             type="number"
@@ -99,9 +100,10 @@ const Form = () => {
           <label htmlFor="month">MONTH</label>
           <input
             {...register("month", { valueAsNumber: true })}
-            id="month"
             // max={12}
             // min={1}
+            className={errors.month && "errorInput"}
+            id="month"
             placeholder="MM"
             required
             type="number"
@@ -112,9 +114,10 @@ const Form = () => {
           <label htmlFor="year">YEAR</label>
           <input
             {...register("year", { valueAsNumber: true })}
-            id="year"
             // max={new Date().getFullYear()}
             // min={1900}
+            className={errors.year && "errorInput"}
+            id="year"
             placeholder="YYYY"
             required
             type="number"
