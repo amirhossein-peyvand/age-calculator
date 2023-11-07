@@ -1,16 +1,16 @@
 import { create } from "zustand";
 
 interface Date {
-  day?: number | string;
-  month?: number | string;
-  year?: number | string;
+  day?: number;
+  month?: number;
+  year?: number;
 }
 
 interface DateQueryStore {
   dateQuery: Date;
-  setDay: (day: string) => void;
-  setMonth: (month: string) => void;
-  setYear: (year: string) => void;
+  setDay: (day: number) => void;
+  setMonth: (month: number) => void;
+  setYear: (year: number) => void;
 }
 
 const useStore = create<DateQueryStore>((set) => ({

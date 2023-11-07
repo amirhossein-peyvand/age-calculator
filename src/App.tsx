@@ -1,5 +1,5 @@
-import Form from "./components/Form";
 import "./sass/App.scss";
+import Form from "./components/Form";
 import useStore from "./store";
 
 function App() {
@@ -12,13 +12,13 @@ function App() {
       </section>
       <section className="bottom">
         <p className="years">
-          <span>{day ? day : "--"}</span> years
+          <span>{year ? year : "--"}</span> years
         </p>
         <p className="months">
           <span>{month ? month : "--"}</span> months
         </p>
         <p className="days">
-          <span>{year ? year : "--"}</span> days
+          <span>{day ? day : "--"}</span> days
         </p>
       </section>
     </article>
